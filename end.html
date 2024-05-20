@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>End Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="label">
+        <div class="finScore"></div>
+    <div class="finalOptions ">
+        <a href="play.html" class="op">Play Again</a>
+        <a href="main.html" class="op">Go Home</a>
+    </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const finalScore = localStorage.getItem("finalScore");
+        //   const finalScoreEle = document.querySelector(".finalScore");
+        //   finalScoreEle.innerText = `Quiz Over! Your score is ${finalScore}.`;
+          const marks = document.querySelector('.finScore');
+          marks.innerHTML = `<div class="finalScore">Quiz Over! Your score is ${finalScore}.</div>`;
+        });
+      </script>
+</body>
+</html>
