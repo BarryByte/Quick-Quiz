@@ -150,14 +150,16 @@ body{
     padding: 5px; */
     padding: 2%;
     display: flex;
-    justify-content: end;
-    align-items: end;
+    justify-content: start;
+    align-items: start;
 }
 .bar{
     width: 0%;
     height: 96%;
     background-color: white;
     line-height: 30px;
+    
+    transition: width 0.5s ease-in-out;
     
 
 }
